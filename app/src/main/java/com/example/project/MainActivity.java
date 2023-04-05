@@ -46,15 +46,11 @@ public class MainActivity extends AppCompatActivity {
         Intent intent = new Intent(getApplicationContext(),categoriseStats.class);
         startActivity(intent);
     }
-}
-/*
-class SMSbg extends BroadcastReceiver{
-    @Override
-    public void onReceive(Context context, Intent intent) {
+    public void stats(View view){
+        Intent intent = new Intent(getApplicationContext(),statistics.class);
+        startActivity(intent);
     }
 }
-
- */
 
 
 

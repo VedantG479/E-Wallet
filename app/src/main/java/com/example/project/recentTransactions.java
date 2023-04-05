@@ -25,6 +25,7 @@ public class recentTransactions extends AppCompatActivity {
         listView = findViewById(R.id.history);
         adapter = new ArrayAdapter<>(this, android.R.layout.simple_list_item_1,messages);
         listView.setAdapter(adapter);
+        updatefuncALL(listView);
     }
 
     public void updatefuncALL(View view) {
