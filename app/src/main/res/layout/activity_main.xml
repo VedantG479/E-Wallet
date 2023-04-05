@@ -10,22 +10,22 @@
     <LinearLayout
         android:id="@+id/ll1"
         android:layout_width="match_parent"
-        android:layout_height="100dp"
+        android:layout_height="wrap_content"
         android:layout_centerHorizontal="true"
         android:layout_marginStart="10dp"
         android:layout_marginTop="10dp"
         android:layout_marginEnd="10dp"
         android:layout_marginBottom="10dp"
-        android:background="#0CCDA3"
         android:gravity="center_vertical"
         tools:ignore="InvalidId">
 
         <ImageView
-            android:layout_width="80dp"
-            android:layout_height="80dp"
+            android:layout_width="70dp"
+            android:layout_height="70dp"
             android:layout_gravity="center"
-            android:layout_marginLeft="50dp"
-            android:background="@drawable/img" />
+            android:layout_marginLeft="15dp"
+            android:layout_marginTop="10dp"
+            android:background="@drawable/usericon" />
 
         <LinearLayout
             android:layout_width="match_parent"
@@ -37,11 +37,11 @@
                 android:layout_width="wrap_content"
                 android:layout_height="match_parent"
                 android:layout_marginLeft="20dp"
-                android:fontFamily="@font/racingsansoneregular"
-                android:text="Good Morning"
-                android:textColor="#fff"
-                android:textSize="30sp"
-                >
+                android:layout_marginTop="15dp"
+                android:fontFamily="@font/chivo_bold"
+                android:text="Hey,"
+                android:textColor="#000000"
+                android:textSize="25dp">
 
             </TextView>
 
@@ -50,9 +50,9 @@
                 android:layout_width="wrap_content"
                 android:layout_height="match_parent"
                 android:layout_marginLeft="20dp"
-                android:fontFamily="@font/bodonimodavariablefont"
-                android:textColor="@color/black"
-                android:textSize="100px"
+                android:fontFamily="@font/chivo_bold"
+                android:textColor="#000000"
+                android:textSize="25dp"
                 android:textStyle="bold" />
         </LinearLayout>
 
@@ -60,49 +60,55 @@
 
 
     <androidx.cardview.widget.CardView
+        android:id="@+id/Card1"
         android:layout_width="350dp"
         android:layout_height="200dp"
-        android:id="@+id/Card1"
+        android:layout_below="@+id/ll1"
         android:layout_centerHorizontal="true"
-        android:layout_marginTop="20dp"
-        android:layout_below="@id/ll1"
+        android:layout_marginTop="30dp"
 
-        app:cardCornerRadius="47dp">
+        app:cardCornerRadius="15dp">
 
         <LinearLayout
             android:layout_width="match_parent"
             android:layout_height="match_parent"
-            android:orientation="vertical"
-            android:background="@drawable/card_gradient1"
+            android:background="#000000"
+            android:orientation="vertical">
 
-            >
+            <ImageView
+                android:id="@+id/imageView"
+                android:layout_width="350dp"
+                android:layout_height="44dp"
+                app:srcCompat="@drawable/cardmain" />
 
             <TextView
                 android:layout_width="wrap_content"
                 android:layout_height="wrap_content"
                 android:layout_gravity="center"
                 android:layout_marginTop="20dp"
-                android:fontFamily="@font/bodonimodavariablefont"
+                android:fontFamily="@font/chivo_bold"
                 android:text="Account balance"
-                android:textColor="@color/black"
+                android:textColor="@color/white"
                 android:textSize="34sp"
                 android:textStyle="bold">
 
             </TextView>
 
             <TextView
+                android:id="@+id/amount_show"
                 android:layout_width="wrap_content"
                 android:layout_height="wrap_content"
-                android:id="@+id/amount_show"
-                android:text="Rs"
-                android:fontFamily="@font/bodonimodavariablefont"
-                android:layout_margin="15dp"
-                android:layout_marginRight="10dp"
-                android:textStyle="bold"
-                android:textColor="@color/black"
-                android:layout_marginTop="10dp"
                 android:layout_gravity="center"
-                android:textSize="34sp">
+                android:layout_marginStart="15dp"
+                android:layout_marginTop="15dp"
+                android:layout_marginEnd="15dp"
+                android:layout_marginRight="10dp"
+                android:layout_marginBottom="15dp"
+                android:fontFamily="@font/chivo_bold"
+                android:text="Rs"
+                android:textColor="@color/white"
+                android:textSize="34sp"
+                android:textStyle="bold">
 
             </TextView>
 
@@ -112,23 +118,20 @@
     </androidx.cardview.widget.CardView>
 
 
-
     <androidx.cardview.widget.CardView
+        android:id="@+id/QR"
         android:layout_width="100dp"
         android:layout_height="100dp"
-        android:id="@+id/QR"
-        android:layout_centerHorizontal="true"
-        app:cardCornerRadius="50dp"
         android:layout_below="@id/Card1"
-        android:layout_marginTop="-50dp"
-        >
+        android:layout_centerHorizontal="true"
+        android:layout_marginTop="-25dp"
+        app:cardCornerRadius="50dp">
+
         <ImageView
             android:layout_width="60dp"
             android:layout_height="60dp"
             android:layout_gravity="center"
-            android:background="@drawable/img_1"
-            >
-        </ImageView>
+            android:background="@drawable/img_1"></ImageView>
     </androidx.cardview.widget.CardView>
 
 
@@ -139,16 +142,16 @@
         android:layout_below="@id/QR"
         android:layout_centerHorizontal="true"
         android:layout_marginStart="15dp"
-        android:layout_marginTop="20dp"
+        android:layout_marginTop="23dp"
         android:layout_marginEnd="15dp"
         android:layout_marginBottom="15dp"
-        android:background="@drawable/button2"
-        android:fontFamily="@font/alegreya_variablefont_wght"
+        android:background="@color/black"
+        android:fontFamily="@font/chivo_bold"
         android:onClick="recTran"
         android:text="RECENT Transactions"
-        android:textColor="@color/black"
-        android:textSize="27sp"
-        android:textStyle="bold" />
+        android:textColor="#77DC02"
+        android:textSize="22dp"
+        />
 
     <Button
         android:id="@+id/B2"
@@ -159,12 +162,11 @@
         android:layout_marginStart="15dp"
         android:layout_marginEnd="15dp"
         android:layout_marginBottom="15dp"
-        android:background="@drawable/button2"
-        android:fontFamily="@font/alegreya_variablefont_wght"
+        android:background="@color/black"
+        android:fontFamily="@font/chivo_bold"
         android:text="Statistics"
-        android:textColor="@color/black"
-        android:textSize="27sp"
-        android:textStyle="bold" />
+        android:textColor="#77DC02"
+        android:textSize="22dp" />
 
     <Button
         android:id="@+id/B3"
@@ -175,13 +177,12 @@
         android:layout_marginStart="15dp"
         android:layout_marginEnd="15dp"
         android:layout_marginBottom="15dp"
-        android:background="@drawable/button2"
-        android:fontFamily="@font/alegreya_variablefont_wght"
+        android:background="@color/black"
+        android:fontFamily="@font/chivo_bold"
         android:onClick="categories"
         android:text="category"
-        android:textColor="@color/black"
-        android:textSize="27sp"
-        android:textStyle="bold" />
+        android:textColor="#77DC02"
+        android:textSize="22dp" />
 
     <Button
         android:id="@+id/B4"
@@ -193,11 +194,10 @@
         android:layout_marginEnd="15dp"
         android:layout_marginBottom="15dp"
         android:text="Goals"
-        android:fontFamily="@font/alegreya_variablefont_wght"
-        android:textSize="27sp"
-        android:textColor="@color/black"
-        android:textStyle="bold"
-        android:background="@drawable/button2"/>
+        android:fontFamily="@font/chivo_bold"
+        android:textSize="22dp"
+        android:textColor="#77DC02"
+        android:background="@color/black"/>
 
     <!--    <LinearLayout-->
     <!--        android:layout_width="match_parent"-->

@@ -16,8 +16,6 @@ public class recentTransactions extends AppCompatActivity {
     public ListView listView;
     public ArrayList<String> messages = new ArrayList<>();
     public ArrayAdapter<String> adapter;
-    int totalExpense = 0;
-    int totalIncome = 0;
 
     @Override
     protected void onCreate(Bundle savedInstanceState) {

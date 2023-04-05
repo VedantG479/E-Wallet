@@ -1,4 +1,7 @@
 <resources>
     <string name="app_name">Project</string>
     <string name="submit_Login">Submit</string>
+    <string name="name">Name</string>
+    <string name="daily_spending_goals">Daily Spending Goals</string>
+    <string name="weekly_spending_goals">Weekly Spending Goals</string>
 </resources>

@@ -8,144 +8,131 @@
 
     >
 
+    <LinearLayout
+        android:id="@+id/L1"
+        android:layout_width="match_parent"
+        android:layout_height="100dp"
+        android:background="#070707"
+        android:orientation="vertical">
 
-    <ImageView
-        android:layout_width="340dp"
-        android:layout_height="300dp"
-        android:id="@+id/Login_img"
-        android:layout_centerHorizontal="true"
-        android:background="@drawable/login_img"
-        android:layout_marginLeft="10dp"
-        android:layout_marginRight="10dp"
-        android:layout_gravity="center"
-        android:contentDescription="TODO">
+        <TextView
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_marginTop="40dp"
+            android:fontFamily="@font/chivo_bold"
+            android:gravity="center"
+            android:text="E-Wallet"
+            android:textColor="@color/white"
+            android:textSize="32dp"
+            android:textStyle="bold" />
 
-    </ImageView>
+    </LinearLayout>
 
     <androidx.cardview.widget.CardView
-        android:layout_width="350dp"
-        android:layout_height="wrap_content"
-        android:layout_below="@id/Login_img"
-        app:cardCornerRadius="60dp"
-        android:layout_marginTop="-19dp"
-        android:backgroundTint="#d5f7e6"
+        android:id="@+id/card"
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
         android:layout_centerHorizontal="true"
-        >
+        android:layout_marginTop="75dp">
 
         <LinearLayout
             android:layout_width="match_parent"
             android:layout_height="match_parent"
-            android:orientation="vertical"
-
-            >
+            android:background="#070707"
+            android:orientation="vertical">
 
             <EditText
                 android:id="@+id/username"
-                android:layout_width="290dp"
-                android:layout_height="40dp"
-                android:layout_marginLeft="30dp"
-                android:layout_marginTop="30dp"
+                android:layout_width="320dp"
+                android:layout_height="48dp"
+                android:layout_gravity="center"
+                android:layout_marginTop="25dp"
+                android:autofillHints="Name"
+                android:fontFamily="@font/chivo_bold"
+                android:hint="Name"
                 android:inputType="text"
-                android:background="@drawable/edittext_backgrd"
-                android:hint="Enter Your Name"
-                android:textSize="19sp"
-                android:paddingLeft="40dp"
-                android:fontFamily="@font/alegreya_variablefont_wght"
+                android:paddingStart="10dp"
+                android:textColorHint="#FFFFFF"
+                android:textColor="#FFFFFF"
+                android:textSize="19dp"
                 android:textStyle="bold"
-                />
+                app:backgroundTint="#FFFFFF"
+                tools:ignore="LabelFor,RtlSymmetry,SpeakableTextPresentCheck" />
 
             <EditText
                 android:id="@+id/daily_spend"
-                android:layout_width="290dp"
-                android:layout_height="40dp"
-                android:layout_marginLeft="30dp"
-                android:layout_marginTop="20dp"
-                android:inputType="numberDecimal"
-                android:background="@drawable/edittext_backgrd"
+                android:layout_width="320dp"
+                android:layout_height="48dp"
+                android:layout_gravity="center"
+                android:layout_marginTop="25dp"
+                android:autofillHints=""
+                android:fontFamily="@font/chivo_bold"
                 android:hint="Daily Spending Goals"
-                android:textSize="19sp"
-                android:fontFamily="@font/alegreya_variablefont_wght"
+                android:inputType="numberDecimal"
+                android:paddingStart="10dp"
+                android:textColorHint="@color/white"
+                android:textColor="#FFFFFF"
+                android:textSize="19dp"
                 android:textStyle="bold"
-                android:paddingLeft="40dp"/>
+                app:backgroundTint="@color/white"
+                tools:ignore="LabelFor,RtlSymmetry,SpeakableTextPresentCheck" />
 
             <EditText
                 android:id="@+id/weekly_spend"
-                android:layout_width="290dp"
-                android:layout_height="40dp"
-                android:layout_marginLeft="30dp"
-                android:layout_marginTop="20dp"
+                android:layout_width="320dp"
+                android:layout_height="48dp"
+                android:layout_gravity="center"
+                android:layout_marginTop="25dp"
+                android:autofillHints=""
+                android:fontFamily="@font/chivo_bold"
+                android:hint="Weekly Spending Goals"
                 android:inputType="numberDecimal"
-                android:background="@drawable/edittext_backgrd"
-                android:hint="Enter Weekly Spending Goals"
-                android:textSize="19sp"
-                android:fontFamily="@font/alegreya_variablefont_wght"
+                android:paddingStart="10dp"
+                android:textColorHint="@color/white"
+                android:textColor="#FFFFFF"
+                android:textSize="19dp"
                 android:textStyle="bold"
-                android:paddingLeft="30dp"/>
-
-            <EditText
-                android:layout_width="290dp"
-                android:layout_height="40dp"
-                android:layout_marginLeft="30dp"
-                android:layout_marginTop="20dp"
-                android:background="@drawable/edittext_backgrd"
-                android:hint="food"
-                android:inputType="numberDecimal"
-                android:textSize="19sp"
-                android:fontFamily="@font/alegreya_variablefont_wght"
-                android:textStyle="bold"
-                android:paddingLeft="30dp"/>
-
-
-            <EditText
-                android:layout_width="290dp"
-                android:layout_height="40dp"
-                android:layout_marginLeft="30dp"
-                android:layout_marginTop="20dp"
-                android:background="@drawable/edittext_backgrd"
-                android:hint="Shopping"
-                android:textSize="19sp"
-                android:fontFamily="@font/alegreya_variablefont_wght"
-                android:textStyle="bold"
-                android:inputType="numberDecimal"
-                android:paddingLeft="30dp"/>
-
-            <EditText
-                android:layout_width="290dp"
-                android:layout_height="40dp"
-                android:layout_marginLeft="30dp"
-                android:layout_marginTop="20dp"
-                android:background="@drawable/edittext_backgrd"
-                android:hint="Other"
-                android:textSize="19sp"
-                android:inputType="numberDecimal"
-                android:paddingLeft="30dp"
-                android:fontFamily="@font/alegreya_variablefont_wght"
-                android:textStyle="bold"
-                />
+                app:backgroundTint="@color/white"
+                tools:ignore="LabelFor,RtlSymmetry,SpeakableTextPresentCheck" />
 
             <Button
                 android:id="@+id/submit_B1"
-                android:layout_width="200dp"
+                android:layout_width="320dp"
                 android:layout_height="50dp"
                 android:layout_gravity="center"
-                android:layout_marginStart="10dp"
-                android:layout_marginTop="10dp"
-                android:layout_marginEnd="10dp"
+                android:layout_marginTop="40dp"
                 android:layout_marginBottom="10dp"
-                android:background="@drawable/submitbutton"
+                android:background="#77DC02"
+                android:fontFamily="@font/chivo_bold"
                 android:text="@string/submit_Login"
-                android:textColor="@color/white"
-                android:textSize="20sp"
-                android:fontFamily="@font/alegreya_variablefont_wght"
+                android:textColor="@color/black"
+                android:textSize="20dp"
                 android:textStyle="bold">
 
             </Button>
 
+            <TextView
+                android:id="@+id/textView"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:paddingLeft="15dp"
+                android:paddingTop="20dp"
+                android:text="Manage your \nfinances the \neasy way"
+                android:textColor="#B3B3B3"
+                android:textSize="50dp"
+                app:fontFamily="@font/chivo_bold" />
+
+            <ImageView
+                android:id="@+id/imageView2"
+                android:layout_width="600dp"
+                android:layout_height="wrap_content"
+                app:srcCompat="@drawable/loginplane" />
+
+
         </LinearLayout>
 
-
-
     </androidx.cardview.widget.CardView>
+
 
 
 </RelativeLayout>

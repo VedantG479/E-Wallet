@@ -4,8 +4,10 @@
     <option name="filePathToZoomLevelMap">
       <map>
         <entry key="app/src/main/res/drawable/button2.xml" value="0.22" />
+        <entry key="app/src/main/res/drawable/loginplane.xml" value="0.257" />
         <entry key="app/src/main/res/layout/activity_categorise_stats.xml" value="0.2911458333333333" />
         <entry key="app/src/main/res/layout/activity_layout.xml" value="0.19655797101449277" />
+        <entry key="app/src/main/res/layout/activity_login.xml" value="0.24980316162109373" />
         <entry key="app/src/main/res/layout/activity_main.xml" value="0.19655797101449277" />
         <entry key="app/src/main/res/layout/activity_recent_transactions.xml" value="0.30520833333333336" />
       </map>
