@@ -2,8 +2,7 @@ package com.example.project;
 
 import androidx.appcompat.app.AppCompatActivity;
 import androidx.core.app.ActivityCompat;
-
-import android.app.Activity;
+import android.content.BroadcastReceiver;
 import android.content.Context;
 import android.content.Intent;
 import android.content.SharedPreferences;
@@ -12,7 +11,6 @@ import android.os.Bundle;
 import android.view.View;
 import android.widget.TextView;
 import android.Manifest;
-
 
 public class MainActivity extends AppCompatActivity {
 
@@ -41,3 +39,14 @@ public class MainActivity extends AppCompatActivity {
         startActivity(intent);
     }
 }
+/*
+class SMSbg extends BroadcastReceiver{
+    @Override
+    public void onReceive(Context context, Intent intent) {
+    }
+}
+
+ */
+
+
+
