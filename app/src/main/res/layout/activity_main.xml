@@ -1,18 +1,265 @@
 <?xml version="1.0" encoding="utf-8"?>
-<androidx.constraintlayout.widget.ConstraintLayout xmlns:android="http://schemas.android.com/apk/res/android"
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
     xmlns:app="http://schemas.android.com/apk/res-auto"
     xmlns:tools="http://schemas.android.com/tools"
     android:layout_width="match_parent"
     android:layout_height="match_parent"
-    tools:context=".MainActivity">
+    tools:context=".MainActivity"
+    >
 
-    <TextView
-        android:layout_width="wrap_content"
-        android:layout_height="wrap_content"
-        android:text="Hello World!"
-        app:layout_constraintBottom_toBottomOf="parent"
-        app:layout_constraintEnd_toEndOf="parent"
-        app:layout_constraintStart_toStartOf="parent"
-        app:layout_constraintTop_toTopOf="parent" />
+    <LinearLayout
+        android:id="@+id/ll1"
+        android:layout_width="match_parent"
+        android:layout_height="100dp"
+        android:layout_centerHorizontal="true"
+        android:layout_marginStart="10dp"
+        android:layout_marginTop="10dp"
+        android:layout_marginEnd="10dp"
+        android:layout_marginBottom="10dp"
+        android:background="#0CCDA3"
+        android:gravity="center_vertical"
+        tools:ignore="InvalidId">
 
-</androidx.constraintlayout.widget.ConstraintLayout>
+        <ImageView
+            android:layout_width="80dp"
+            android:layout_height="80dp"
+            android:layout_gravity="center"
+            android:layout_marginLeft="50dp"
+            android:background="@drawable/img" />
+
+        <LinearLayout
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:orientation="vertical">
+
+            <TextView
+                android:id="@+id/T1"
+                android:layout_width="wrap_content"
+                android:layout_height="match_parent"
+                android:layout_marginLeft="20dp"
+                android:fontFamily="@font/racingsansoneregular"
+                android:text="Good Morning"
+                android:textColor="#fff"
+                android:textSize="30sp"
+                >
+
+            </TextView>
+
+            <TextView
+                android:id="@+id/show_username"
+                android:layout_width="wrap_content"
+                android:layout_height="match_parent"
+                android:layout_marginLeft="20dp"
+                android:fontFamily="@font/bodonimodavariablefont"
+                android:textColor="@color/black"
+                android:textSize="100px"
+                android:textStyle="bold" />
+        </LinearLayout>
+
+    </LinearLayout>
+
+
+    <androidx.cardview.widget.CardView
+        android:layout_width="350dp"
+        android:layout_height="200dp"
+        android:id="@+id/Card1"
+        android:layout_centerHorizontal="true"
+        android:layout_marginTop="20dp"
+        android:layout_below="@id/ll1"
+
+        app:cardCornerRadius="47dp">
+
+        <LinearLayout
+            android:layout_width="match_parent"
+            android:layout_height="match_parent"
+            android:orientation="vertical"
+            android:background="@drawable/card_gradient1"
+
+            >
+
+            <TextView
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_gravity="center"
+                android:layout_marginTop="20dp"
+                android:fontFamily="@font/bodonimodavariablefont"
+                android:text="Account balance"
+                android:textColor="@color/black"
+                android:textSize="34sp"
+                android:textStyle="bold">
+
+            </TextView>
+
+            <TextView
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:id="@+id/amount_show"
+                android:text="Rs"
+                android:fontFamily="@font/bodonimodavariablefont"
+                android:layout_margin="15dp"
+                android:layout_marginRight="10dp"
+                android:textStyle="bold"
+                android:textColor="@color/black"
+                android:layout_marginTop="10dp"
+                android:layout_gravity="center"
+                android:textSize="34sp">
+
+            </TextView>
+
+
+        </LinearLayout>
+
+    </androidx.cardview.widget.CardView>
+
+
+
+    <androidx.cardview.widget.CardView
+        android:layout_width="100dp"
+        android:layout_height="100dp"
+        android:id="@+id/QR"
+        android:layout_centerHorizontal="true"
+        app:cardCornerRadius="50dp"
+        android:layout_below="@id/Card1"
+        android:layout_marginTop="-50dp"
+        >
+        <ImageView
+            android:layout_width="60dp"
+            android:layout_height="60dp"
+            android:layout_gravity="center"
+            android:background="@drawable/img_1"
+            >
+        </ImageView>
+    </androidx.cardview.widget.CardView>
+
+
+    <Button
+        android:id="@+id/B1"
+        android:layout_width="match_parent"
+        android:layout_height="59dp"
+        android:layout_below="@id/QR"
+        android:layout_centerHorizontal="true"
+        android:layout_marginStart="15dp"
+        android:layout_marginTop="20dp"
+        android:layout_marginEnd="15dp"
+        android:layout_marginBottom="15dp"
+        android:background="@drawable/button2"
+        android:fontFamily="@font/alegreya_variablefont_wght"
+        android:onClick="recTran"
+        android:text="RECENT Transactions"
+        android:textColor="@color/black"
+        android:textSize="27sp"
+        android:textStyle="bold" />
+
+    <Button
+        android:id="@+id/B2"
+        android:layout_width="match_parent"
+        android:layout_height="59dp"
+        android:layout_below="@id/B1"
+        android:layout_centerHorizontal="true"
+        android:layout_marginStart="15dp"
+        android:layout_marginEnd="15dp"
+        android:layout_marginBottom="15dp"
+        android:text="Statistics"
+        android:fontFamily="@font/alegreya_variablefont_wght"
+        android:textSize="27sp"
+        android:textColor="@color/black"
+        android:textStyle="bold"
+        android:background="@drawable/button2"/>
+
+    <Button
+        android:id="@+id/B3"
+        android:layout_width="match_parent"
+        android:layout_height="59dp"
+        android:layout_below="@id/B2"
+        android:layout_centerHorizontal="true"
+        android:layout_marginStart="15dp"
+        android:layout_marginEnd="15dp"
+        android:layout_marginBottom="15dp"
+        android:text="category"
+        android:fontFamily="@font/alegreya_variablefont_wght"
+        android:textSize="27sp"
+        android:textColor="@color/black"
+        android:textStyle="bold"
+        android:background="@drawable/button2"/>
+
+    <Button
+        android:id="@+id/B4"
+        android:layout_width="match_parent"
+        android:layout_height="59dp"
+        android:layout_below="@id/B3"
+        android:layout_centerHorizontal="true"
+        android:layout_marginStart="15dp"
+        android:layout_marginEnd="15dp"
+        android:layout_marginBottom="15dp"
+        android:text="Goals"
+        android:fontFamily="@font/alegreya_variablefont_wght"
+        android:textSize="27sp"
+        android:textColor="@color/black"
+        android:textStyle="bold"
+        android:background="@drawable/button2"/>
+
+    <!--    <LinearLayout-->
+    <!--        android:layout_width="match_parent"-->
+    <!--        android:layout_height="wrap_content"-->
+    <!--        android:id="@+id/buttonRow1"-->
+    <!--        android:layout_below="@id/B1"-->
+    <!--        android:orientation="horizontal"-->
+    <!--        android:gravity="center"-->
+    <!--        android:layout_marginTop="15dp">-->
+
+    <!--        <Button-->
+    <!--            android:layout_width="150dp"-->
+    <!--            android:layout_height="50dp"-->
+    <!--            android:id="@+id/B2"-->
+    <!--            android:text="click"-->
+    <!--            android:layout_margin="15dp"-->
+    <!--            android:layout_gravity="center"-->
+    <!--            android:background="@drawable/button2"-->
+    <!--            />-->
+
+    <!--        <Button-->
+    <!--            android:layout_width="150dp"-->
+    <!--            android:layout_height="50dp"-->
+    <!--            android:id="@+id/B3"-->
+    <!--            android:text="click"-->
+    <!--            android:layout_margin="15dp"-->
+    <!--            android:background="@drawable/button2"-->
+    <!--            />-->
+
+    <!--    </LinearLayout>-->
+
+
+
+    <!--    <LinearLayout-->
+    <!--        android:layout_width="match_parent"-->
+    <!--        android:layout_height="wrap_content"-->
+    <!--        android:id="@+id/buttonRow2"-->
+    <!--        android:layout_below="@id/buttonRow1"-->
+    <!--        android:orientation="horizontal"-->
+    <!--        android:gravity="center"-->
+    <!--        android:layout_marginTop="15dp">-->
+
+    <!--        <Button-->
+    <!--            android:layout_width="150dp"-->
+    <!--            android:layout_height="50dp"-->
+    <!--            android:id="@+id/B4"-->
+    <!--            android:text="click"-->
+    <!--            android:layout_margin="15dp"-->
+    <!--            android:layout_gravity="center"-->
+    <!--            android:background="@drawable/button2"-->
+    <!--            />-->
+
+    <!--        <Button-->
+    <!--            android:layout_width="150dp"-->
+    <!--            android:layout_height="50dp"-->
+    <!--            android:id="@+id/B5"-->
+    <!--            android:text="click"-->
+    <!--            android:layout_margin="15dp"-->
+    <!--            android:background="@drawable/button2"-->
+    <!--            />-->
+
+    <!--    </LinearLayout>-->
+
+
+
+</RelativeLayout>

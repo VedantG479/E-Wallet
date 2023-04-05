@@ -1,0 +1,151 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    tools:context=".loginActivity"
+
+    >
+
+
+    <ImageView
+        android:layout_width="340dp"
+        android:layout_height="300dp"
+        android:id="@+id/Login_img"
+        android:layout_centerHorizontal="true"
+        android:background="@drawable/login_img"
+        android:layout_marginLeft="10dp"
+        android:layout_marginRight="10dp"
+        android:layout_gravity="center"
+        android:contentDescription="TODO">
+
+    </ImageView>
+
+    <androidx.cardview.widget.CardView
+        android:layout_width="350dp"
+        android:layout_height="wrap_content"
+        android:layout_below="@id/Login_img"
+        app:cardCornerRadius="60dp"
+        android:layout_marginTop="-19dp"
+        android:backgroundTint="#d5f7e6"
+        android:layout_centerHorizontal="true"
+        >
+
+        <LinearLayout
+            android:layout_width="match_parent"
+            android:layout_height="match_parent"
+            android:orientation="vertical"
+
+            >
+
+            <EditText
+                android:id="@+id/username"
+                android:layout_width="290dp"
+                android:layout_height="40dp"
+                android:layout_marginLeft="30dp"
+                android:layout_marginTop="30dp"
+                android:inputType="text"
+                android:background="@drawable/edittext_backgrd"
+                android:hint="Enter Your Name"
+                android:textSize="19sp"
+                android:paddingLeft="40dp"
+                android:fontFamily="@font/alegreya_variablefont_wght"
+                android:textStyle="bold"
+                />
+
+            <EditText
+                android:id="@+id/daily_spend"
+                android:layout_width="290dp"
+                android:layout_height="40dp"
+                android:layout_marginLeft="30dp"
+                android:layout_marginTop="20dp"
+                android:inputType="numberDecimal"
+                android:background="@drawable/edittext_backgrd"
+                android:hint="Daily Spending Goals"
+                android:textSize="19sp"
+                android:fontFamily="@font/alegreya_variablefont_wght"
+                android:textStyle="bold"
+                android:paddingLeft="40dp"/>
+
+            <EditText
+                android:id="@+id/weekly_spend"
+                android:layout_width="290dp"
+                android:layout_height="40dp"
+                android:layout_marginLeft="30dp"
+                android:layout_marginTop="20dp"
+                android:inputType="numberDecimal"
+                android:background="@drawable/edittext_backgrd"
+                android:hint="Enter Weekly Spending Goals"
+                android:textSize="19sp"
+                android:fontFamily="@font/alegreya_variablefont_wght"
+                android:textStyle="bold"
+                android:paddingLeft="30dp"/>
+
+            <EditText
+                android:layout_width="290dp"
+                android:layout_height="40dp"
+                android:layout_marginLeft="30dp"
+                android:layout_marginTop="20dp"
+                android:background="@drawable/edittext_backgrd"
+                android:hint="food"
+                android:inputType="numberDecimal"
+                android:textSize="19sp"
+                android:fontFamily="@font/alegreya_variablefont_wght"
+                android:textStyle="bold"
+                android:paddingLeft="30dp"/>
+
+
+            <EditText
+                android:layout_width="290dp"
+                android:layout_height="40dp"
+                android:layout_marginLeft="30dp"
+                android:layout_marginTop="20dp"
+                android:background="@drawable/edittext_backgrd"
+                android:hint="Shopping"
+                android:textSize="19sp"
+                android:fontFamily="@font/alegreya_variablefont_wght"
+                android:textStyle="bold"
+                android:inputType="numberDecimal"
+                android:paddingLeft="30dp"/>
+
+            <EditText
+                android:layout_width="290dp"
+                android:layout_height="40dp"
+                android:layout_marginLeft="30dp"
+                android:layout_marginTop="20dp"
+                android:background="@drawable/edittext_backgrd"
+                android:hint="Other"
+                android:textSize="19sp"
+                android:inputType="numberDecimal"
+                android:paddingLeft="30dp"
+                android:fontFamily="@font/alegreya_variablefont_wght"
+                android:textStyle="bold"
+                />
+
+            <Button
+                android:id="@+id/submit_B1"
+                android:layout_width="200dp"
+                android:layout_height="50dp"
+                android:layout_gravity="center"
+                android:layout_marginStart="10dp"
+                android:layout_marginTop="10dp"
+                android:layout_marginEnd="10dp"
+                android:layout_marginBottom="10dp"
+                android:background="@drawable/submitbutton"
+                android:text="@string/submit_Login"
+                android:textColor="@color/white"
+                android:textSize="20sp"
+                android:fontFamily="@font/alegreya_variablefont_wght"
+                android:textStyle="bold">
+
+            </Button>
+
+        </LinearLayout>
+
+
+
+    </androidx.cardview.widget.CardView>
+
+
+</RelativeLayout>
