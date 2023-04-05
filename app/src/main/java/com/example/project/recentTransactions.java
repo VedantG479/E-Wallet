@@ -41,12 +41,12 @@ public class recentTransactions extends AppCompatActivity {
                 if ((messageBody.contains("CREDITED") || messageBody.contains("Credited") || messageBody.contains("credited") || messageBody.contains("credit"))){
                     sign = "+";
                     bit = "INCOME";
-                    messages.add(sign+messageBody.substring(17,messageBody.indexOf("h")) + bit);
+                    messages.add("↗  "+sign+messageBody.substring(17,messageBody.indexOf("h")) + bit);
                 }
                 else if ((messageBody.contains("DEBITED") || messageBody.contains("Debited") || messageBody.contains("debited") || messageBody.contains("debit"))){
                     sign = "-";
                     bit = "EXPENSE";
-                    messages.add(sign+messageBody.substring(17,messageBody.indexOf("h")) + bit);
+                    messages.add("↙  "+sign+messageBody.substring(17,messageBody.indexOf("h")) + bit);
                 }
                 /*else if (messageBody.contains("paid thru") & messageBody.contains("UPI")){
                     sign = "-";
@@ -111,7 +111,7 @@ public class recentTransactions extends AppCompatActivity {
             if (messageBody.contains("amount") & messageBody.contains("Canara Bank") & messageBody.contains("CREDITED")) {
                 sign = "+";
                 bit = "INCOME";
-                messages.add(sign+messageBody.substring(17,messageBody.indexOf("h")) + bit);
+                messages.add("↗  "+sign+messageBody.substring(17,messageBody.indexOf("h")) + bit);
             }
 
             /*SBI Bank
@@ -150,7 +150,7 @@ public class recentTransactions extends AppCompatActivity {
             if (messageBody.contains("amount") & messageBody.contains("Canara Bank") & messageBody.contains("DEBITED")) {
                 sign = "-";
                 bit = "EXPENSE";
-                messages.add(sign+messageBody.substring(17,messageBody.indexOf("h")) + bit);
+                messages.add("↙  "+sign+messageBody.substring(17,messageBody.indexOf("h")) + bit);
             }
 
             /*SBI Bank
