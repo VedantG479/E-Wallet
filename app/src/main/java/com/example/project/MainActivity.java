@@ -36,4 +36,8 @@ public class MainActivity extends AppCompatActivity {
         Intent intent = new Intent(getApplicationContext(),recentTransactions.class);
         startActivity(intent);
     }
+    public void categories(View view){
+        Intent intent = new Intent(getApplicationContext(),categoriseStats.class);
+        startActivity(intent);
+    }
 }
