@@ -65,24 +65,24 @@ public class statistics extends AppCompatActivity {
     }
     private ArrayList<BarEntry> dataValues1(){
         ArrayList<BarEntry> dataVals = new ArrayList<>();
-        dataVals.add(new BarEntry(1,3));
-        dataVals.add(new BarEntry(2,1));
-        dataVals.add(new BarEntry(3,4));
-        dataVals.add(new BarEntry(4,2));
-        dataVals.add(new BarEntry(5,1));
-        dataVals.add(new BarEntry(6,3));
-        dataVals.add(new BarEntry(7,2));
+        dataVals.add(new BarEntry(1,0));
+        dataVals.add(new BarEntry(2,100));
+        dataVals.add(new BarEntry(3,80));
+        dataVals.add(new BarEntry(4,20));
+        dataVals.add(new BarEntry(5,0));
+        dataVals.add(new BarEntry(6,0));
+        dataVals.add(new BarEntry(7,20));
         return dataVals;
     }
     private ArrayList<BarEntry> dataValues2(){
         ArrayList<BarEntry> dataVals = new ArrayList<>();
-        dataVals.add(new BarEntry(1,2));
-        dataVals.add(new BarEntry(2,0));
-        dataVals.add(new BarEntry(3,1));
-        dataVals.add(new BarEntry(4,3));
-        dataVals.add(new BarEntry(5,1));
-        dataVals.add(new BarEntry(6,4));
-        dataVals.add(new BarEntry(7,2));
+        dataVals.add(new BarEntry(1,120));
+        dataVals.add(new BarEntry(2,490));
+        dataVals.add(new BarEntry(3,0));
+        dataVals.add(new BarEntry(4,115));
+        dataVals.add(new BarEntry(5,243));
+        dataVals.add(new BarEntry(6,0));
+        dataVals.add(new BarEntry(7,40));
         return dataVals;
     }
     public void back(View view){
